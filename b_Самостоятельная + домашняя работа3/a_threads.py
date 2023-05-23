@@ -40,9 +40,8 @@ class WeatherHandler(QtCore.QThread):
     def run(self) -> None:
         while self.__status:
             # Placeholder code
-            """
+
             response = requests.get(self.__api_url)
             data = response.json()
             self.weatherDataReceived.emit(data)
             time.sleep(self.__delay)
-            """
