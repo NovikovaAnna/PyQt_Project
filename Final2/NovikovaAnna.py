@@ -88,16 +88,15 @@ class Window(QtWidgets.QMainWindow):
         self.update_tree_widget()
 
     def delete_note(self):
-        selected_items = self.ui.treeWidget.selectedItems()
-        if selected_items:
-            item = selected_items[0]
-            note_text = item.text(0)
-            for note in self.notes:
-                if note['note'] == note_text:
-                    self.notes.remove(note)
-                    self.save_notes()
-                    self.update_tree_widget()
-                    break
+        selected_indexes = self.ui.treeWidget.selectedIndexes()
+        if selected_indexes:
+            selected_index = selected_indexes[0]
+            note_index = selected_index.row()
+
+            if 0 <= note_index < len(self.notes):
+                del self.notes[note_index]
+                self.save_notes()
+                self.update_tree_widget()
 
     def hide_gif(self):
         self.gif_label.hide()
