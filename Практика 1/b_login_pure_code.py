@@ -9,7 +9,7 @@ class MyFirstWindow(QtWidgets.QWidget):
 
     def initUi(self) -> None:
         """
-        Доинициализация Ui
+        Доинициализация  Ui
 
         :return: None
         """

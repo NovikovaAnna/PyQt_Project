@@ -10,7 +10,7 @@ class MyFirstWindow(QtWidgets.QWidget):
         # self.setFixedSize(size)
     def initUi(self)-> None
     """
-    Доинициализация UI
+    Доинициализация  UI
     :return None 
     """
         self.setWindowTitle("Моя первая программа")

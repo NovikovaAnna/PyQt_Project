@@ -49,6 +49,7 @@ class Ui_LoginForm(object):
         self.horizontalLayout_3.addWidget(self.lineEditPassword)
 
 
+
         self.verticalLayout.addLayout(self.horizontalLayout_3)
 
         self.verticalSpacer = QSpacerItem(20, 55, QSizePolicy.Minimum, QSizePolicy.Expanding)

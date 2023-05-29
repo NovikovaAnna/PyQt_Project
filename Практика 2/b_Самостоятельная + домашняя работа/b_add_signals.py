@@ -14,6 +14,7 @@ class Window(QtWidgets.QWidget):
         """
         Инициализация интерфейса
 
+
         :return: None
         """
 
